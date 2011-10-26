@@ -1,0 +1,73 @@
+* { margin: 0; padding: 0; }
+body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.gif); }
+.clear { clear: both; }
+#page-wrap { width: 800px; margin: 20px auto 40px; padding-top:35px;}
+
+h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+h2 { font-size: 18px; margin: 0 0 6px 0; position: relative; }
+h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+p { margin: 0 0 16px 0; }
+a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+a:hover { border-bottom-style: solid; color: black; }
+ul { margin: 0 0 32px 17px; }
+#objective { width: 550px; float: left; }
+#objective p { font-family: Georgia, Serif; font-style: italic; color: #666; font-size: 15px }
+dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 120px; float: left; height: 100px; border-right: 1px solid #999;  }
+dd { width: 630px; float: right; }
+dd.clear { float: none; margin: 0; height: 15px; }
+
+.poloroid {
+	float: right; margin: 0px 20px 0 0; 
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	
+	width: 200px;
+	min-height: 200px;
+	position:relative;
+	border: 0px solid #ccc;
+	background: rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.poloroid:before {
+	content: '';
+	width: 110%;
+	left: 0; 
+	height: 125%;
+	z-index:-1;
+	position:absolute;
+	border: 0px solid #ccc;
+	background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#f3f3f3), to(#fff), color-stop(.1,#f3f3f3));
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+	-webkit-transform: translate(-5%,-5%);
+}
+
+.poloroid:after {
+	content: '';
+	width: 100%;
+	left: 0; 
+	height: 115%;
+	z-index:-2;
+	background: none;
+	position:absolute;
+	border-radius: 20px;
+	-webkit-box-shadow: 8px 0px 10px rgba(0, 0, 0, 0.3);
+	-webkit-transform: translate(0,0);
+}
+
+img#pic {
+	margin:0px;
+	padding:0px;
+	float:right;
+}
+
+img#pclip { 
+	z-index:5;
+	float: right; margin: -45px -65px 0 0; 
+}
+
+/* hacks to hide pic div on silly browsers, hello IE */
+* html .poloroid { display:hidden; }
+*+html .poloroid { display:hidden; }
