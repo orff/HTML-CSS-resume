@@ -1,0 +1,14 @@
+An HTML "one sheet" resume with mobile friendly css
+
+Features:
+- HTML / CSS "one sheet" resume template
+- fully tested on Safari / iPad / iPhone
+- somewhat tested on FireFox
+- Funny default text (I think)
+
+Lacking:
+- IE / Chrome support
+- a "demo" link
+- more CSS options for the headshot
+
+Just clone this, fill in your details, send out, get  job, profit!
